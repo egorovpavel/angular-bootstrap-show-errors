@@ -21,7 +21,7 @@ showErrorsModule.directive 'showErrors',
       showSuccess = getShowSuccess options
       trigger = getTrigger options
 
-      inputEl   = el[0].querySelector '.form-control[name]'
+      inputEl   = el[0].querySelector '*[name]'
       inputNgEl = angular.element inputEl
       inputName = $interpolate(inputNgEl.attr('name') || '')(scope)
       unless inputName
