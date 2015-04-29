@@ -23,7 +23,7 @@ showErrorsModule.directive 'showErrors',
       trigger = getTrigger options      
 
       inputElements = {}
-      for inputElement in el[0].querySelectorAll('.form-control[name]')
+      for inputElement in el[0].querySelectorAll('*[name]')
         if inputName = $interpolate(inputElement.name || '')(scope) 
           (inputElements[inputName] or= []).push inputElement
 

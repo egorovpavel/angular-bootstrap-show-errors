@@ -1,5 +1,5 @@
 {
-  "name": "angular-bootstrap-show-errors",
+  "name": "angular-show-errors",
   "version": "2.3.0",
   "authors": [
     "Paul Yoder <paulyoder@gmail.com>"
@@ -13,7 +13,7 @@
     "validation"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/paulyoder/angular-bootstrap-show-errors",
+  "homepage": "https://github.com/egorovpavel/angular-bootstrap-show-errors.git",
   "ignore": [
     "**/.*",
     "node_modules",

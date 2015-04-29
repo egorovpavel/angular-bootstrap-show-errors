@@ -30,7 +30,7 @@
         showSuccess = getShowSuccess(options);
         trigger = getTrigger(options);
         inputElements = {};
-        _ref = el[0].querySelectorAll('.form-control[name]');
+        _ref = el[0].querySelectorAll('*[name]');
         for (_i = 0, _len = _ref.length; _i < _len; _i++) {
           inputElement = _ref[_i];
           if (inputName = $interpolate(inputElement.name || '')(scope)) {
