@@ -24,7 +24,7 @@ showErrorsModule.directive 'showErrors',
 
       inputElements = {}
       for inputElement in el[0].querySelectorAll('*[name]')
-        if inputName = $interpolate(inputElement.name || '')(scope) 
+        if inputName = $interpolate(inputElement.getAttribute('name') || '')(scope) 
           (inputElements[inputName] or= []).push inputElement
 
       isBlurred = () ->
