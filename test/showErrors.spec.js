@@ -404,7 +404,6 @@
           el = compileEl();
           $scope.userForm.firstName.$setViewValue(validName);
           angular.element(firstNameEl(el)).triggerHandler('blur');
-          angular.element(firstNameEl(el)).triggerHandler('blur');
           $scope.$digest();
           return expectFirstNameFormGroupHasSuccessClass(el).toBe(false);
         });
