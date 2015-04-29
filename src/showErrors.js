@@ -32,7 +32,7 @@
         inputNgEl = angular.element(inputEl);
         inputName = $interpolate(inputNgEl.attr('name') || '')(scope);
         if (!inputName) {
-          throw "show-errors element has no child input elements with a 'name' attribute and a 'form-control' class";
+          throw "show-errors element has no child input elements with a 'name'";
         }
         inputNgEl.bind(trigger, function() {
           blurred = true;
